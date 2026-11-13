@@ -1,0 +1,42 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python environment
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Generated evaluation reports
+backend/reports/
+
+# macOS
+.DS_Store
+
+
+# Python virtual environments (any directory)
+**/venv/
+**/.venv/
+**/.venv312/
+
+# Python cache
+**/__pycache__/
+*.py[cod]
+
+# Node dependencies
+**/node_modules/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Build files
+**/dist/
+**/build/
+
+AWS_IAM_Bedrock_Titan_Embeddings_Notes.pdf
+backup_before_deduplication.sql
