@@ -1,72 +1,121 @@
-# Project Name
-Agentic AI project
+# VPRO Agent Platform - Backend
 
 ## Project Overview
-The project does to create a Agent Chatbox.
 
-## Key Features
-- AI-powered functionality
-- Backend API integration
-- Frontend interface
-- Secure configuration
+The backend of VPRO Agent Platform is developed using Python and FastAPI.
+
+It provides the API and AI integration layer for the Agentic AI conversational application.
 
 ## Technology Stack
+
 - Python
 - FastAPI
-- React
+- Uvicorn
+- SQLAlchemy
+- PostgreSQL
+- pgvector
+- LangChain
+- LangGraph
+- AWS Bedrock
+- Amazon Titan
+- MCP
+- RAGAS
 - Docker
-- AWS
 
-## Project Architecture
-1) Installation
-2) Enable Services.
-3) DataBase connections & respective tables
-4) Indexing
-5) MCP Flow
-6) Query
+## Architecture
 
-## Project Structure
-React (Fronend)
-FastAPI (backend)
+The documented application flow is:
 
-vectordb (pgvector) (Postgress) (AWS Server)
-PostgreSQL (AWS Server)
+React → FastAPI → LangGraph
 
-Titan (AWS Server)
-LLM (AWS Server)
+The backend architecture includes:
 
-Bed Rock Services
+1. Application installation.
+2. Service initialization.
+3. Database connections and tables.
+4. Document indexing.
+5. MCP integration.
+6. Knowledge base queries.
 
-RAG (CRAG, SRAG)
+## AI and RAG Components
 
-MCP Server
-    1) calculator
-    2) search_knowledge_base
+### Retrieval-Augmented Generation
 
-Security guardrails
+The project documentation identifies:
 
-Harness Engineering
+- RAG
+- CRAG
+- SRAG
 
-Docker
+### Agent Orchestration
 
-Deploy (AWS)
+LangGraph is used in the documented architecture for agent workflow orchestration.
 
-Understanding the flow: React --- FastAPI --- LangGraph 
+### Model Integration
+
+- AWS Bedrock
+- Amazon Titan
+- LangChain AWS integration
+
+### Database and Vector Search
+
+- PostgreSQL
+- pgvector
+
+### Model Context Protocol
+
+The documented MCP tools include:
+
+1. Calculator
+2. Search Knowledge Base
+
+### Security and Engineering
+
+- Security Guardrails
+- Harness Engineering
+
+## Evaluation Framework
+
+The backend contains evaluation scripts for:
+
+- Dataset evaluation.
+- Live RAG evaluation.
+- Evaluation report generation.
+- Agent evaluation.
+- RAG evaluation gates.
 
 ## Installation
-Already documented in notes
+
+Install the backend dependencies:
+
+```bash
+pip install -r requirements.txt
+```
 
 ## Environment Configuration
-Already documented in notes
 
-## Running the Application
-Already documented in notes
+Configure the required environment variables before running the application.
 
-## Future Enhancements
-Coming Soon
+Never commit credentials, API keys, AWS secrets, or database passwords.
+
+Refer to the local development configuration instructions.
+
+## Testing
+
+Run the automated tests using:
+
+```bash
+pytest
+```
+
+## Deployment
+
+The project documentation identifies Docker and AWS as deployment technologies.
+
+Refer to the deployment configuration for the actual deployment procedure.
 
 ## Author
+
 Jaya Aditya
 
-## License
-NA
+GitHub: https://github.com/JayaAditya92
